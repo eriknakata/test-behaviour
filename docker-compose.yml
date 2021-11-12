@@ -1,0 +1,9 @@
+postgres:
+  container_name: postgres-testing
+  image: mdillon/postgis:11-alpine
+  environment:
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=admin
+    - POSTGRES_DB=testing
+  ports:
+    - 5432:5432
